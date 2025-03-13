@@ -1,0 +1,5 @@
+<div class="flex flex-col gap-5">
+    <app-todoform (messageEvent)="receiveMessage($event)"></app-todoform>
+    <app-todolist [tasks]="tasks"></app-todolist>
+</div>
+

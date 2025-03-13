@@ -1,0 +1,16 @@
+<div class="p-5 flex flex-col gap-5 bg-gray-400 w-[90%] ml-[5%] rounded h-[70vh]">
+    <div class="flex flex-row justify-center w-full px-10  gap-110 ">
+        <h2 class="text-[#333] font-semibold text-3xl">Tasks List</h2>
+        <h5 class="text-[#434141] font-semibold">Show All</h5>
+    </div>
+
+    @for (task of tasks; track task) {
+        <div class="flex flex-row justify-center gap-5 w-full px-10 pt-5 ">
+            <div class="w-[54%] ml-5 px-4 py-2" > {{ task }}</div>
+            <button class="bg-[#333] hover:bg-[#434141] text-white font-bold py-2 px-4 rounded w-[10%]">Edit </button>
+            <button class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 rounded w-[10%]">Delete </button>
+        </div>
+    }
+             
+</div>
+

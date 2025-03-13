@@ -1,0 +1,13 @@
+<div class="p-5 flex flex-col gap-5 justify-center items-center bg-[#333] w-[90%] ml-[5%] h-[25vh]">
+    <div class="flex flex-row justify-center w-full px-10  gap-80 items-end">
+        <h2 class="text-gray-400 font-semibold text-3xl">2DO Application</h2>
+        <h5 class="text-white font-semibold">Add New Task</h5>
+    </div>
+
+    <div class="flex flex-row justify-center gap-5 w-full px-10 pt-5 ">
+        <input type="text" name="text" id="" [(ngModel)]="inputData" class="bg-white w-[65%] ml-5 px-4 py-2 border-1 border-white rounded outline-0">
+        <button class="bg-gray-400 hover:bg-gray-500 text-white font-bold py-2 px-4 rounded w-[10%]" (click)="sendData()">
+            Add 
+          </button>
+    </div>
+</div>
